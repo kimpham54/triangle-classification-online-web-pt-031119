@@ -21,8 +21,8 @@ class Triangle
       @kind = :scalene
     else
       raise TriangleError
+    end
   end
-end
 
   def kind()
     @kind
@@ -34,8 +34,4 @@ end
     def message
   "triangle you are not."
   end
-end
-
-
-
 end
