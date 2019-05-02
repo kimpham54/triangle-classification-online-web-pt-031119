@@ -22,10 +22,10 @@ class Triangle
     elsif ((side1+side2 > side3) | (side2+side3 > side1) | (side1+side3 > side2) && ((side1 > 0) && (side2 > 0) && (side3 > 0)))
       @kind = :scalene
      else
-      begin
+      # begin
        raise TriangleError
-     rescue TriangleError => error
-         puts error.message
+    #  rescue TriangleError => error
+        #  puts error.message
        end
   end
 end
