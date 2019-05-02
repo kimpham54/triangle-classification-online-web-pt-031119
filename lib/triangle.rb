@@ -26,7 +26,7 @@ end
 
   class TriangleError < StandardError
     def message
-  "triangle you are not."
+  puts "triangle you are not."
   end
 end
 
