@@ -35,3 +35,5 @@ class Triangle
   "triangle you are not."
   end
 end
+
+end
