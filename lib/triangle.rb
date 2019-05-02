@@ -15,18 +15,18 @@ class Triangle
      rescue TriangleError => error
          puts error.message
        end
-  #   elsif ((side1 == side2 && side2 == side3) && (side1 > 0) && (side2 > 0) && (side3 > 0))
-  #     @kind = :equilateral
-  #   elsif ((side1+side2 > side3) | (side2+side3 > side1) | (side1+side3 > side2) && (side1 == side2) | (side2 == side3) | (side1 == side3) && ((side1 > 0) && (side2 > 0) && (side3 > 0)))
-  #     @kind = :isosceles
-  #   elsif ((side1+side2 > side3) | (side2+side3 > side1) | (side1+side3 > side2) && ((side1 > 0) && (side2 > 0) && (side3 > 0)))
-  #     @kind = :scalene
-  #    else
-  #     begin
-  #      raise TriangleError
-  #    rescue TriangleError => error
-  #        puts error.message
-  #      end
+    elsif ((side1 == side2 && side2 == side3) && (side1 > 0) && (side2 > 0) && (side3 > 0))
+      @kind = :equilateral
+    elsif ((side1+side2 > side3) | (side2+side3 > side1) | (side1+side3 > side2) && (side1 == side2) | (side2 == side3) | (side1 == side3) && ((side1 > 0) && (side2 > 0) && (side3 > 0)))
+      @kind = :isosceles
+    elsif ((side1+side2 > side3) | (side2+side3 > side1) | (side1+side3 > side2) && ((side1 > 0) && (side2 > 0) && (side3 > 0)))
+      @kind = :scalene
+     else
+      begin
+       raise TriangleError
+     rescue TriangleError => error
+         puts error.message
+       end
   end
 end
 
